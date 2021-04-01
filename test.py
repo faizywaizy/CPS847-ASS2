@@ -10,6 +10,8 @@ class Test(unittest.TestCase):
         main.testCode(testNumbers)
     def test2(self):
         self.assertEqual(operations.multiply(9,2), 18)
+    def test3(self):
+        self.assertEqual(operations.divide(18,2), 9)
 
 if __name__ == '__main__':
     unittest.main()
