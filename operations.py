@@ -5,7 +5,9 @@ def quartered(value):
     return value/4
 
 def divide(value,divisor):
-    return  value / divisor
+    if divisor == 0:
+        raise ZeroDivisionError('Cannot divide by zero.')
+    return  (value/divisor)
 
 def squared(value):
     return value*value
