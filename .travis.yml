@@ -1,0 +1,10 @@
+language: python
+python: '3.9'
+install:
+  - pip install codecov
+  - pip install coverage
+script:
+  - python -m unittest discover -v
+  - coverage run test.py
+after_success:
+  - codecov --token=a27cdaec-2a84-4839-bb04-46bfdadcb705
