@@ -6,12 +6,8 @@ def testCode(testNumbers):
         if number == 0:
             print("Skip 0\n")
             continue
-        try:
-            print("{0} squared is {1}\n".format(number,operations.squared(number)))
-            print("{0} cubed is {1}\n".format(number,operations.cubed(number)))
-            print("{0} multiplied by 3 is {1}\n".format(number,operations.multiply(number,3)))
-            print("{0} halved is {1}\n".format(number,operations.halved(number)))
-            print("{0} quartered is {1}\n".format(number,operations.quartered(number)))
-            print("{0} divided by zero is {1}\n".format(number,operations.divide(number,0)))
-        except ZeroDivisionError:
-            print("Divisor cannot be zero\n")
+        print("{0} squared is {1}\n".format(number,operations.squared(number)))
+        print("{0} cubed is {1}\n".format(number,operations.cubed(number)))
+        print("{0} multiplied by 3 is {1}\n".format(number,operations.multiply(number,3)))
+        print("{0} halved is {1}\n".format(number,operations.halved(number)))
+        print("{0} quartered is {1}\n".format(number,operations.quartered(number)))
